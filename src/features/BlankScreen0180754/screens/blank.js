@@ -23,22 +23,28 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { TextInput_7: "" }
 
   render = () => (
     <View style={styles.View_1}>
-      <ImageBackground
-        source={{
-          uri:
-            "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/20200612_130624_8_bestshot.jpg"
-        }}
-        style={styles.ImageBackground_3}
-      >
+      <ImageBackground style={styles.ImageBackground_3}>
         <Image
-          source={{ uri: "https://via.placeholder.com/150" }}
-          style={styles.Image_6}
+          source={{
+            uri:
+              "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/crowdbotics.jpg"
+          }}
         />
       </ImageBackground>
+      <TextInput
+        placeholder="Type an item to search"
+        style={styles.TextInput_7}
+        value={this.state.TextInput_7}
+        onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
+      />
+      <View style={styles.View_11}>
+        <View style={styles.View_12} />
+        <View style={styles.View_13} />
+      </View>
     </View>
   )
 }
@@ -48,7 +54,15 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: { height: 200, alignItems: "center", alignContent: "center" },
   ImageBackground_3: { width: 600, height: 200, backgroundSize: "cover" },
-  Image_6: { height: 400, borderBottomWidth: 20 }
+  Image_6: { height: 400, borderBottomWidth: 20 },
+  View_1: { height: 200, alignItems: "center", alignContent: "center" },
+  ImageBackground_3: { width: 600, height: 0, alignItems: "center" },
+  Image_5: {},
+  TextInput_7: { width: "0100%", paddingLeft: 180 },
+  View_11: { alignSelf: "center", flexDirection: "row" },
+  View_12: { width: 120, alignSelf: "flex-start" },
+  View_13: { width: 130, alignSelf: "flex-start" }
 })
