@@ -52,6 +52,8 @@ export default class Blank extends React.Component {
             }}
             style={styles.Image_15}
           />
+          <Text style={styles.Text_21}>Product 1</Text>
+          <Text style={styles.Text_26}>$299</Text>
         </View>
         <View style={styles.View_13}>
           <Image
@@ -62,6 +64,8 @@ export default class Blank extends React.Component {
             }}
             style={styles.Image_19}
           />
+          <Text style={styles.Text_24}>Product 2</Text>
+          <Text style={styles.Text_31}>$199</Text>
         </View>
       </View>
     </View>
@@ -69,66 +73,6 @@ export default class Blank extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginHorizontal: 16
-  },
-
-  View_1: { height: 200, alignItems: "center", alignContent: "center" },
-  ImageBackground_3: { width: 600, height: 200, backgroundSize: "cover" },
-  Image_6: { height: 400, borderBottomWidth: 20 },
-  View_1: { height: 200, alignItems: "center", alignContent: "center" },
-  ImageBackground_3: { width: 600, height: 0, alignItems: "center" },
-  Image_5: {},
-  TextInput_7: { width: "0100%", paddingLeft: 180 },
-  View_11: { alignSelf: "center", flexDirection: "row" },
-  View_12: { width: 120, alignSelf: "flex-start" },
-  View_13: { width: 130, alignSelf: "flex-start" },
-  View_1: { height: 200, alignItems: "center", alignContent: "center" },
-  View_3: { width: 300, height: 200, alignItems: "center" },
-  Image_5: {},
-  View_1: { height: 200, alignItems: "center", alignContent: "center" },
-  View_3: { width: 300, height: 200, alignItems: "center" },
-  Image_5: {},
-  TextInput_7: { marginTop: 8, marginBottom: 15 },
-  View_1: { height: 200, alignItems: "center", alignContent: "center" },
-  View_3: { width: 300, height: 0, alignItems: "center" },
-  Image_5: {},
-  TextInput_7: { marginTop: 8, marginBottom: 5 },
-  View_1: { height: 200, alignItems: "center", alignContent: "center" },
-  View_3: { width: 300, height: 0, alignItems: "center" },
-  Image_5: {},
-  TextInput_7: { height: 40, marginTop: 8 },
-  View_11: { flexDirection: "row" },
-  View_12: { width: 150, height: 65 },
-  View_13: { width: 150, height: 65 },
-  View_1: { height: 200, alignItems: "center", alignContent: "center" },
-  View_3: { width: 300, height: 0, alignItems: "center" },
-  Image_5: {},
-  TextInput_7: { height: 40, marginTop: 8 },
-  View_11: { flexDirection: "row" },
-  View_12: { width: 150, height: 65 },
-  Image_15: {},
-  View_13: { width: 150, height: 65 },
-  Image_19: {},
-  View_1: { height: 200, alignItems: "center", alignContent: "center" },
-  View_3: { width: 300, height: 0, alignItems: "center" },
-  Image_5: {},
-  TextInput_7: { height: 40, marginTop: 8 },
-  View_11: { flexDirection: "row" },
-  View_12: { width: 150, height: 65 },
-  Image_15: { height: 100 },
-  View_13: { width: 150, height: 65 },
-  Image_19: { height: 100 },
-  View_1: { height: 200, alignItems: "center", alignContent: "center" },
-  View_3: { width: 300, height: 0, alignItems: "center" },
-  Image_5: {},
-  TextInput_7: { height: 40, marginTop: 8 },
-  View_11: { flexDirection: "row" },
-  View_12: { width: 150, height: 65 },
-  Image_15: { height: 100 },
-  View_13: { width: 150, height: 65 },
-  Image_19: { height: 100 },
   View_1: { height: 200, alignItems: "center", alignContent: "center" },
   View_3: {
     width: 300,
@@ -140,9 +84,28 @@ const styles = StyleSheet.create({
   },
   Image_5: { height: 260 },
   TextInput_7: { height: 40, marginTop: 8 },
-  View_11: { height: 0, flexDirection: "row" },
-  View_12: { width: 150, height: 65 },
-  Image_15: { height: 80 },
-  View_13: { width: 150, height: 65 },
-  Image_19: { height: 80 }
+  View_11: { height: 0, flexDirection: "row", alignContent: "space-between" },
+  View_12: {
+    width: 150,
+    height: 200,
+    flexWrap: "nowrap",
+    alignItems: "center"
+  },
+  Image_15: { height: 80, alignSelf: "flex-start" },
+  Text_21: { alignSelf: "center", fontSize: 16, fontFamily: "Roboto-Regular" },
+  Text_26: {
+    alignSelf: "center",
+    fontSize: 18,
+    color: "#2a6ea2",
+    fontFamily: "Roboto-Regular"
+  },
+  View_13: { width: 150, height: 200 },
+  Image_19: { height: 80, alignSelf: "flex-start" },
+  Text_24: { alignSelf: "center", fontSize: 16, fontFamily: "Roboto-Regular" },
+  Text_31: {
+    alignSelf: "center",
+    fontSize: 18,
+    color: "#2a6ea2",
+    fontFamily: "Roboto-Regular"
+  }
 })
