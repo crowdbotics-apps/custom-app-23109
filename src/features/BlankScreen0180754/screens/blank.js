@@ -41,6 +41,10 @@ export default class Blank extends React.Component {
           onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
         />
       </View>
+      <View style={styles.View_11}>
+        <View style={styles.View_12} />
+        <View style={styles.View_13} />
+      </View>
     </View>
   )
 }
@@ -71,5 +75,12 @@ const styles = StyleSheet.create({
   View_1: { height: 200, alignItems: "center", alignContent: "center" },
   View_3: { width: 300, height: 0, alignItems: "center" },
   Image_5: {},
-  TextInput_7: { marginTop: 8, marginBottom: 5 }
+  TextInput_7: { marginTop: 8, marginBottom: 5 },
+  View_1: { height: 200, alignItems: "center", alignContent: "center" },
+  View_3: { width: 300, height: 0, alignItems: "center" },
+  Image_5: {},
+  TextInput_7: { height: 40, marginTop: 8 },
+  View_11: { flexDirection: "row" },
+  View_12: { width: 150, height: 65 },
+  View_13: { width: 150, height: 65 }
 })
