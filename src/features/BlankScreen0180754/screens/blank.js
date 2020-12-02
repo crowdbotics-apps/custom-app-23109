@@ -23,27 +23,17 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_7: "" }
+  state = {}
 
   render = () => (
     <View style={styles.View_1}>
-      <ImageBackground style={styles.ImageBackground_3}>
+      <View style={styles.View_3}>
         <Image
           source={{
             uri:
               "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/crowdbotics.jpg"
           }}
         />
-      </ImageBackground>
-      <TextInput
-        placeholder="Type an item to search"
-        style={styles.TextInput_7}
-        value={this.state.TextInput_7}
-        onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
-      />
-      <View style={styles.View_11}>
-        <View style={styles.View_12} />
-        <View style={styles.View_13} />
       </View>
     </View>
   )
@@ -64,5 +54,8 @@ const styles = StyleSheet.create({
   TextInput_7: { width: "0100%", paddingLeft: 180 },
   View_11: { alignSelf: "center", flexDirection: "row" },
   View_12: { width: 120, alignSelf: "flex-start" },
-  View_13: { width: 130, alignSelf: "flex-start" }
+  View_13: { width: 130, alignSelf: "flex-start" },
+  View_1: { height: 200, alignItems: "center", alignContent: "center" },
+  View_3: { width: 300, height: 200, alignItems: "center" },
+  Image_5: {}
 })
