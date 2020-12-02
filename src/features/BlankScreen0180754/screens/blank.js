@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { TextInput_7: "" }
 
   render = () => (
     <View style={styles.View_1}>
@@ -33,6 +33,12 @@ export default class Blank extends React.Component {
             uri:
               "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/crowdbotics.jpg"
           }}
+        />
+        <TextInput
+          placeholder="Type an item to search"
+          style={styles.TextInput_7}
+          value={this.state.TextInput_7}
+          onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
         />
       </View>
     </View>
@@ -57,5 +63,9 @@ const styles = StyleSheet.create({
   View_13: { width: 130, alignSelf: "flex-start" },
   View_1: { height: 200, alignItems: "center", alignContent: "center" },
   View_3: { width: 300, height: 200, alignItems: "center" },
-  Image_5: {}
+  Image_5: {},
+  View_1: { height: 200, alignItems: "center", alignContent: "center" },
+  View_3: { width: 300, height: 200, alignItems: "center" },
+  Image_5: {},
+  TextInput_7: { marginTop: 8, marginBottom: 15 }
 })
