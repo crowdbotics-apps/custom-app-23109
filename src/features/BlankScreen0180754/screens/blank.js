@@ -49,14 +49,17 @@ export default class Blank extends React.Component {
               uri:
                 "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/nike.jpg"
             }}
+            style={styles.Image_15}
           />
         </View>
         <View style={styles.View_13}>
           <Image
+            resizeMode="contain"
             source={{
               uri:
                 "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/nike.jpg"
             }}
+            style={styles.Image_19}
           />
         </View>
       </View>
@@ -106,5 +109,14 @@ const styles = StyleSheet.create({
   View_12: { width: 150, height: 65 },
   Image_15: {},
   View_13: { width: 150, height: 65 },
-  Image_19: {}
+  Image_19: {},
+  View_1: { height: 200, alignItems: "center", alignContent: "center" },
+  View_3: { width: 300, height: 0, alignItems: "center" },
+  Image_5: {},
+  TextInput_7: { height: 40, marginTop: 8 },
+  View_11: { flexDirection: "row" },
+  View_12: { width: 150, height: 65 },
+  Image_15: { height: 100 },
+  View_13: { width: 150, height: 65 },
+  Image_19: { height: 100 }
 })
