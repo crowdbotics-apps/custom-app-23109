@@ -54,6 +54,12 @@ export default class Blank extends React.Component {
           />
           <Text style={styles.Text_21}>Product 1</Text>
           <Text style={styles.Text_26}>$299</Text>
+          <Button
+            title="View More"
+            color="#ffffff"
+            style={styles.Button_33}
+            onPress={() => alert("Pressed!")}
+          />
         </View>
         <View style={styles.View_13}>
           <Image
@@ -98,6 +104,18 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "#2a6ea2",
     fontFamily: "Roboto-Regular"
+  },
+  Button_33: {
+    alignSelf: "center",
+    fontSize: 14,
+    color: "#d62424",
+    borderColor: "#00ff00",
+    borderWidth: 4,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderTopWidth: 4,
+    borderBottomWidth: 4,
+    borderRadius: 8
   },
   View_13: { width: 150, height: 200 },
   Image_19: { height: 80, alignSelf: "flex-start" },
