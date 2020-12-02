@@ -33,6 +33,7 @@ export default class Blank extends React.Component {
             uri:
               "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/crowdbotics.jpg"
           }}
+          style={styles.Image_5}
         />
         <TextInput
           placeholder="Type an item to search"
@@ -47,7 +48,7 @@ export default class Blank extends React.Component {
             resizeMode="contain"
             source={{
               uri:
-                "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/nike.jpg"
+                "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/nike_Ig90htB.jpg"
             }}
             style={styles.Image_15}
           />
@@ -57,7 +58,7 @@ export default class Blank extends React.Component {
             resizeMode="contain"
             source={{
               uri:
-                "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/nike.jpg"
+                "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/nike_Ig90htB.jpg"
             }}
             style={styles.Image_19}
           />
@@ -127,5 +128,21 @@ const styles = StyleSheet.create({
   View_12: { width: 150, height: 65 },
   Image_15: { height: 100 },
   View_13: { width: 150, height: 65 },
-  Image_19: { height: 100 }
+  Image_19: { height: 100 },
+  View_1: { height: 200, alignItems: "center", alignContent: "center" },
+  View_3: {
+    width: 300,
+    height: 0,
+    overflow: "hidden",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "flex-start"
+  },
+  Image_5: { height: 260 },
+  TextInput_7: { height: 40, marginTop: 8 },
+  View_11: { height: 0, flexDirection: "row" },
+  View_12: { width: 150, height: 65 },
+  Image_15: { height: 80 },
+  View_13: { width: 150, height: 65 },
+  Image_19: { height: 80 }
 })
