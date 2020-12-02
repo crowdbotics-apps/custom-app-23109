@@ -67,5 +67,9 @@ const styles = StyleSheet.create({
   View_1: { height: 200, alignItems: "center", alignContent: "center" },
   View_3: { width: 300, height: 200, alignItems: "center" },
   Image_5: {},
-  TextInput_7: { marginTop: 8, marginBottom: 15 }
+  TextInput_7: { marginTop: 8, marginBottom: 15 },
+  View_1: { height: 200, alignItems: "center", alignContent: "center" },
+  View_3: { width: 300, height: 0, alignItems: "center" },
+  Image_5: {},
+  TextInput_7: { marginTop: 8, marginBottom: 5 }
 })
